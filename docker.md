@@ -1,16 +1,60 @@
+## Docker
+
+### Dockerfile
 
 ```
-echo -e "Retagging Original Image"
-docker tag reddit-dl:latest reddit-dl:previous && echo -e "Image tagged\n\n"
-echo -e "Removing Original Image"
-docker rmi reddit-dl:latest && echo -e "Image removed\n\n"
-echo -e "Creating new image"
-docker build -t reddit-dl .
-echo -e "Created\n\n"
-echo -e "Stopping container"
+FROM python:3
+ENV PYTHONUNBUFFERED 1
+RUN mkdir -p /code/files
+WORKDIR /code
+RUN pip install praw && pip install wget && pip install python-telegram-bot
+COPY prebuild/* /code/
+CMD [ "python", "/code/main.py" ]
+```
+
+
+### Full Build
+```
+IMAGE=
+CONTAINER=
+
+## Tag original container
+docker tag $CONTAINER:latest $CONTAINER:previous
+
+## Remove old container
+docker rmi $CONTAINER:latest
+
+## Create New Image
+docker build -t $IMAGE .
+
+## Stop old container
 docker stop reddit-downloader
-echo -e "Removing container\n\n"
 docker rm reddit-downloader
-echo -e "Creating new container"
-sh start_container.sh
+
+```
+
+### Deploy
+```
+IMAGE=
+CONTAINER=
+HOSTVOL=/home/jack/rdl_storage
+CONTAINERVOL=/code/files
+docker create --name=$CONTAINER -it -v $HOSTVOL:$CONTAINERVOL $IMAGE
+```
+
+### Compose Version
+```
+version: '2'
+
+services:
+  stackname:
+    container_name: discord-paper
+    image: discordpaper
+    environment:
+      - GUILD=ProjectBot
+      - GUID_ID=
+      - TOKEN=
+    volumes:
+      - /home/jack/Pictures/paper_backups:/code/files
+
 ```
