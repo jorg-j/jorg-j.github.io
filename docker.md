@@ -58,3 +58,15 @@ services:
       - /home/jack/Pictures/paper_backups:/code/files
 
 ```
+
+
+
+
+
+## Docker Resources
+
+[NextCloud](resources/NextCloud.sh)
+
+[MiniDLNA](resources/minidlnabuild.sh)
+
+[Transmission](resources/transmission.sh)
