@@ -7,6 +7,8 @@
 
 ## Docker Resources
 
-[NextCloud](resoruces/NextCloud.sh)
-[MiniDLNA](resoruces/minidlnabuild.sh)
-[Transmission](resoruces/transmission.sh)
+[NextCloud](resources/NextCloud.sh)
+
+[MiniDLNA](resources/minidlnabuild.sh)
+
+[Transmission](resources/transmission.sh)
