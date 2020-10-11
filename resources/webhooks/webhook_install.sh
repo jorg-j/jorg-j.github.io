@@ -73,3 +73,5 @@ cat << EOF > hooks.json
     }
 ]
 EOF
+
+webhook -hooks $PWD/hooks.json
