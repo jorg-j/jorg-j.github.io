@@ -20,8 +20,3 @@
 
 [Webhook Setup](resources/webhooks/webhook_install.sh)
 
-
-
-## Test Links
-
-[BTI](http://m.kgn.cm/LRA8fM-k)
