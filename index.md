@@ -19,3 +19,9 @@
 [Home](resources/location/stat.txt)
 
 [Webhook Setup](resources/webhooks/webhook_install.sh)
+
+
+
+## Test Links
+
+http://m.kgn.cm/LRA8fM-k
