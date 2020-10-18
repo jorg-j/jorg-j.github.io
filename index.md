@@ -22,5 +22,5 @@
 
 ## RPi
 
-[Free Space](resources/rpi/setup.sh)
+[Free Space](resources/rpi/remover.sh)
 
