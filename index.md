@@ -20,3 +20,7 @@
 
 [Webhook Setup](resources/webhooks/webhook_install.sh)
 
+## RPi
+
+[Free Space](resources/rpi/setup.sh)
+
