@@ -1,6 +1,6 @@
 ## RPi
 
-### Remove Unessesary Programs
+### Remove Unnessesary Programs
 
 [Raw]({{ site.raw }}resources/rpi/remover.sh)
 
