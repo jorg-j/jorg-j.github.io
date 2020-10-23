@@ -3,8 +3,6 @@
 [Docker](pages/docker.md)
 
 
-
-
 ## Docker Resources
 
 ### NextCloud
@@ -36,16 +34,12 @@
 [.](resources/location/stat.txt)
 
 
-
 ## RPi
 
 [RPi](pages/rpi.md)
 
 
-
-
 ## Hue Lights
 
 [Webhook Light Control](pages/hue.md)
-
 
