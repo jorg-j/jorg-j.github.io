@@ -1,6 +1,6 @@
 ## Code Samples
 
-[Docker](docker.md)
+[Docker](pages/docker.md)
 
 
 
@@ -27,4 +27,4 @@
 
 ## Hue Lights
 
-[Webhook Light Control](hue.md)
+[Webhook Light Control](pages/hue.md)
