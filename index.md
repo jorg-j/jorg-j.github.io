@@ -7,7 +7,7 @@
 
 ## Docker Resources
 
-Raw [NextCloud]({{ site.url }}resources/docker/NextCloud.sh)
+Raw [NextCloud]({{ site.raw }}resources/docker/NextCloud.sh)
 Download
 [NextCloud](resources/docker/NextCloud.sh) 
 
