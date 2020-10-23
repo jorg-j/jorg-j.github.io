@@ -24,14 +24,14 @@
 
 [Raw]({{ site.raw }}resources/docker/transmission.sh)
 
-[Transmission](resources/docker/transmission.sh)
+[Download](resources/docker/transmission.sh)
 
 
 ### Webhook Resources
 
 [Raw]({{ site.raw }}resources/webhooks/webhook_install.sh)
 
-[Webhook Setup](resources/webhooks/webhook_install.sh)
+[Webhook Setup Download](resources/webhooks/webhook_install.sh)
 
 [.](resources/location/stat.txt)
 
