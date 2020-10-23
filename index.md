@@ -7,7 +7,9 @@
 
 ## Docker Resources
 
-[NextCloud](resources/docker/NextCloud.sh)
+Raw [NextCloud]({{ site.url }}resources/docker/NextCloud.sh)
+Download
+[NextCloud](resources/docker/NextCloud.sh) 
 
 [MiniDLNA](resources/docker/minidlnabuild.sh)
 
@@ -28,3 +30,7 @@
 ## Hue Lights
 
 [Webhook Light Control](pages/hue.md)
+
+
+
+https://raw.githubusercontent.com/jorg-j/jorg-j.github.io/master/
