@@ -2,3 +2,7 @@ theme: jekyll-theme-hacker
 title: jorg-j Page
 raw: https://raw.githubusercontent.com/jorg-j/jorg-j.github.io/master/
 show_downloads: true
+
+nextcloud: [NextCloud]({{ site.raw }}resources/docker/NextCloud.sh)
+minidlna: [MiniDLNA]({{ site.raw }}resources/docker/minidlnabuild.sh)
+transmission: [Transmission]({{ site.raw }}resources/docker/transmission.sh)

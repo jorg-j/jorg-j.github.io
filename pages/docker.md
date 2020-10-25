@@ -18,8 +18,8 @@ CMD [ "python", "/code/main.py" ]
 IMAGE=
 CONTAINER=
 
-## Tag original container
-docker tag $CONTAINER:latest $CONTAINER:previous
+## Tag original image
+docker tag $IMAGE:latest $IMAGE:previous
 
 ## Remove old container
 docker rmi $CONTAINER:latest
@@ -28,8 +28,8 @@ docker rmi $CONTAINER:latest
 docker build -t $IMAGE .
 
 ## Stop old container
-docker stop reddit-downloader
-docker rm reddit-downloader
+docker stop $CONTAINER
+docker rm $CONTAINER
 
 ```
 
@@ -39,6 +39,7 @@ IMAGE=
 CONTAINER=
 HOSTVOL=/home/jack/rdl_storage
 CONTAINERVOL=/code/files
+
 docker create --name=$CONTAINER -it -v $HOSTVOL:$CONTAINERVOL $IMAGE
 ```
 
@@ -65,8 +66,6 @@ services:
 
 ## Docker Resources
 
-[NextCloud](resources/docker/NextCloud.sh)
+{{ site.nextcloud }}
 
-[MiniDLNA](resources/docker/minidlnabuild.sh)
 
-[Transmission](resources/docker/transmission.sh)
