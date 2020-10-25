@@ -42,5 +42,3 @@
 ## Hue Lights
 
 [Webhook Light Control](pages/hue.md)
-
-[test](pages/test.html)
