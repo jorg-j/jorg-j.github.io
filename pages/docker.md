@@ -59,13 +59,3 @@ services:
       - /home/jack/Pictures/paper_backups:/code/files
 
 ```
-
-
-
-
-
-## Docker Resources
-
-{{ site.nextcloud }}
-
-
