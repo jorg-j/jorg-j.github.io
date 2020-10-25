@@ -1,15 +1,21 @@
 
  <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    </head> 
+</head> 
     
 
-    <script>
-        $(document).ready(function(){
-          $("button").click(function(){
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
             $("p").hide();
           });
         });
+        $("button_a").click(function(){
+            $("p").show();
+          });
+        });
+
+
         </script>
         </head>
         <body>
@@ -20,6 +26,7 @@
         <p>This is another paragraph.</p>
         
         <button>Click me to hide paragraphs</button>
+        <button_a>Click me to show paragraphs</button_a>
         
         </body>
         </html>
