@@ -1,33 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
 
- <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head> 
-    
+<h1>Test Page</h1>
+<p>Test Body.</p>
 
-<script>
-    $(document).ready(function(){
-        $("button").click(function(){
-            $("p").hide();
-          });
-        });
-        $("button_a").click(function(){
-            $("p").show();
-          });
-        });
+<a href="https://jorg-j.github.io/">Home</a>
 
 
-        </script>
-        </head>
-        <body>
-        
-        <h2>This is a heading</h2>
-        
-        <p>This is a paragraph.</p>
-        <p>This is another paragraph.</p>
-        
-        <button>Click me to hide paragraphs</button>
-        <button_a>Click me to show paragraphs</button_a>
-        
-        </body>
-        </html>
-        
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+</body>
+</html> 
