@@ -2,9 +2,9 @@
 
 ## Links
 
-https://www.jbhifi.com.au/products/apple-macbook-air-13-inch-i5-512gb-gold-2020
+[Apple](https://www.jbhifi.com.au/products/apple-macbook-air-13-inch-i5-512gb-gold-2020)
 
-https://www.jbhifi.com.au/products/microsoft-surface-laptop-go-12-5-i5-128gb-sandstone
+[Surface](https://www.jbhifi.com.au/products/microsoft-surface-laptop-go-12-5-i5-128gb-sandstone)
 
 ## Price
 
