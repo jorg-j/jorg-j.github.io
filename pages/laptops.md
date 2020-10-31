@@ -8,8 +8,7 @@
 
 ## Price
 
-Apple 1749
-Surface 1248
+Apple 1749 | Surface 1248
 
 Difference 500
 
