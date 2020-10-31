@@ -8,13 +8,17 @@
 
 ## Price
 
-Apple 1749 | Surface 1248
+Apple 1749 
+
+Surface 1248
 
 Difference 500
 
 ## Pros and Cons
 
-Apple 512gb ssd | Surface 128gb ssd
+Apple 512gb ssd
+
+Surface 128gb ssd
 
 Apple wins for space
 
