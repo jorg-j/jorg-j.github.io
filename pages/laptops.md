@@ -14,8 +14,7 @@ Difference 500
 
 ## Pros and Cons
 
-Apple 512gb ssd
-Surface 128gb ssd
+Apple 512gb ssd | Surface 128gb ssd
 
 Apple wins for space
 
@@ -31,7 +30,7 @@ Surface has USB port Apple doesnt so a attachment is required - price 30
 
 After owning a Surface Pro 6 (tablet version similar to the above Surface Go) If I was to buy again I would get the mac.
 
-As much as I am not a fan of either microsoft or apple my preference is always going to be Linux based.
+As much as I am not a fan of either Microsoft or Apple my preference is always going to be Linux based.
 
 This must be put aside as Linux is not suitable for your use case. In your case I would suggest the Apple.
 
