@@ -1,9 +1,7 @@
 # moonlander-mk1
 Mapping for Ergodox Moonlander
 
-Bin
-
-[Download]({{ site.raw }}resources/moonlander/moonlander_main.bin)
+[Bin Download]({{ site.raw }}resources/moonlander/moonlander_main.bin)
 
 Layer 1
 
