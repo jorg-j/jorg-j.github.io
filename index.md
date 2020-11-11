@@ -47,11 +47,6 @@
 
 [Webhook Light Control](pages/hue.md)
 
-<html>
-<body>
+## Property Hunter Tool
 
-[www.google.com test]
-
-{% include buttons.html %}
-</body>
-</html>
+[Property Hunter](pages/propertyhunter.md)
