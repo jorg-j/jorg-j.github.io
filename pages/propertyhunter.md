@@ -24,10 +24,6 @@
 
 [Nope](14583271)
 
-[39-mossgiel-park-drive-endeavour-hills-vic-3802](https://www.domain.com.au/39-mossgiel-park-drive-endeavour-hills-vic-3802-12515913)
-
-[Nope](12515913)
-
 [4-61-bishop-street-box-hill-vic-3128](https://www.domain.com.au/4-61-bishop-street-box-hill-vic-3128-13884094)
 
 [Nope](13884094)
@@ -35,10 +31,6 @@
 [650-stud-road-scoresby-vic-3179](https://www.domain.com.au/650-stud-road-scoresby-vic-3179-14616869)
 
 [Nope](14616869)
-
-[2-dorgan-court-endeavour-hills-vic-3802](https://www.domain.com.au/2-dorgan-court-endeavour-hills-vic-3802-14593137)
-
-[Nope](14593137)
 
 [2-28-gertonia-avenue-boronia-vic-3155](https://www.domain.com.au/2-28-gertonia-avenue-boronia-vic-3155-14657118)
 
