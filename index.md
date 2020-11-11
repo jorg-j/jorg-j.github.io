@@ -46,3 +46,10 @@
 ## Hue Lights
 
 [Webhook Light Control](pages/hue.md)
+
+
+[www.google.com test]
+
+{% include buttons.html %}
+</body>
+</html>
