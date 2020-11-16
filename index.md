@@ -1,15 +1,16 @@
+This is just a place for me to test and store odds and ends.
+
 ## Code Samples
 
 [Docker](pages/docker.md)
 
-
 ## Docker Resources
 
 ### NextCloud
+
 [Raw]({{ site.raw }}resources/docker/NextCloud.sh)
 
-[Download](resources/docker/NextCloud.sh) 
-
+[Download](resources/docker/NextCloud.sh)
 
 ### MiniDLNA
 
@@ -17,13 +18,11 @@
 
 [Download](resources/docker/minidlnabuild.sh)
 
-
 ### Transmission
 
 [Raw]({{ site.raw }}resources/docker/transmission.sh)
 
 [Download](resources/docker/transmission.sh)
-
 
 ### Webhook Resources
 
@@ -37,11 +36,9 @@
 
 [Link](pages/moonlander.md)
 
-
 ## RPi
 
 [RPi](pages/rpi.md)
-
 
 ## Hue Lights
 
