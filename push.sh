@@ -1,5 +1,7 @@
 #!/bin/bash
 
+git pull --rebase
+
 GITHUB_SSH_REPOSITORY_URL="git@github.com:jorg-j/jorg-j.github.io.git"
 CommitMessage="Sync Changes"
 
