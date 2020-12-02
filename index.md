@@ -1,5 +1,7 @@
 This is just a place for me to test and store odds and ends.
 
+[Test](https://www.kogan.com/nz/buy/kogan-55-smart-hdr-4k-uhd-led-tv-android-tv-series-9-xu9220-b/)
+
 ## Code Samples
 
 [Docker](pages/docker.md)
