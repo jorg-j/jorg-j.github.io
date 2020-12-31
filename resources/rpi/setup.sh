@@ -9,6 +9,15 @@ sudo apt remove --purge minecraft-pi -y
 sudo apt autoremove -y
 
 ## Pull Samba setup
+mkdir samba-install
+cd samba-install
+git init
+git remote add -f origin https://github.com/jorg-j/jorg-j.github.io.git
+git config core.sparseCheckout true
+
+echo "jorg-j.github.io/resources/rpi/samba/" >> .git/info/sparse-checkout
+git pull origin master
+
 wget https://raw.githubusercontent.com/jorg-j/jorg-j.github.io/master/resources/rpi/samba
 mv samba samba-install
 
