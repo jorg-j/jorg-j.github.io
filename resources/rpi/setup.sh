@@ -19,6 +19,6 @@ echo "resources/rpi/samba/" >> .git/info/sparse-checkout
 git pull origin master
 
 wget https://raw.githubusercontent.com/jorg-j/jorg-j.github.io/master/resources/rpi/samba
-mv resources/rpi/samba .
+mv resources/rpi/samba/* .
 rm -r resources
 
