@@ -13,7 +13,6 @@ cache/smbconfig.conf: smb.conf
 
 remove:
 	sudo service smbd stop
-	sudo apt remove --purge samba samba-common-bin -y
-	sudo rm -r /etc/samba
+	sudo apt remove --purge samba -y
 	rm -r cache
 
