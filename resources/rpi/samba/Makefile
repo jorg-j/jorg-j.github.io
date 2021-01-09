@@ -15,4 +15,5 @@ remove:
 	sudo service smbd stop
 	sudo apt remove --purge samba -y
 	rm -r cache
+	rm -r /etc/samba
 
