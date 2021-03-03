@@ -1,4 +1,4 @@
 ## Bash
 
-[Get Options](pages/bash_resources/opts.md)
+[Get Options](bash_resources/opts.md)
 
