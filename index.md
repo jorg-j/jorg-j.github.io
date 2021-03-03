@@ -1,5 +1,8 @@
 This is just a place for me to test and store odds and ends.
 
+## Bash Resources
+
+[Bash](pages/bash.md)
 ## Code Samples
 
 [Docker](pages/docker.md)
