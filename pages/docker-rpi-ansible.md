@@ -25,4 +25,4 @@ In the playbook set the `NMEUSR` variable to the username you want to be added t
 
 Ansible Playbook
 
-![]({{ site.raw }}resources/docker/4b_setup.yaml)
+[4b_setup]({{ site.raw }}resources/docker/4b_setup.yaml)
