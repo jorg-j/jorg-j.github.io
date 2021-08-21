@@ -1,0 +1,82 @@
+
+---
+- hosts: main
+  become: true
+  vars:
+    VNC: False
+    DOCKER: True
+    NEWUSR: True
+    REBOOT: True
+    NMEUSR: "DKR"
+    
+  tasks:
+    - name: Update apt repo and cache on all Debian/Ubuntu boxes
+      apt: update_cache=yes force_apt_get=yes cache_valid_time=3600
+
+    - name: Upgrade all packages on servers
+      apt: upgrade=dist force_apt_get=yes
+
+    - name: Install realvnc-vnc-server
+      apt:
+        name: realvnc-vnc-server
+        state: latest
+      when: VNC == True
+
+    - name: Install realvnc-vnc-viewer
+      apt:
+        name: realvnc-vnc-viewer
+        state: latest
+      when: VNC == True
+
+## Enforce new user creation
+## New users password will be 'pi12345' this should be changed immediately 
+    - name: Create a login user
+      user:
+        name: "{{ NMEUSR }}"
+        password: '$6$qNSiB1cDMXaR6$9qcclg92IPkjux.6NFNvplAH5deShpJQk7PZfN/zKYUeM2XPcyAX9bMKBGmsAHt8umJ5WXYzPCfD7SJkw30FG/'
+        groups: # Empty by default, here we give it some groups
+        - sudo
+        state: present
+        shell: /bin/bash       # Defaults to /bin/bash
+        system: no             # Defaults to no
+        createhome: yes        # Defaults to yes
+        home: /home/{{ NMEUSR }}  # Defaults to /home/<username>
+      when: NEWUSR == True
+
+## Docker
+    - name: docker install script
+      ansible.builtin.shell: curl -fsSL https://get.docker.com -o get-docker.sh
+      args:
+        executable: /bin/bash        
+      when: DOCKER == True
+
+    - name: docker install script part 2
+      ansible.builtin.shell: sh get-docker.sh
+      args:
+        executable: /bin/bash        
+      when: DOCKER == True
+
+    - name: Install uidmap
+      apt:
+        name: uidmap
+        state: latest
+      when: DOCKER == True
+
+
+    - name: add users to docker group 
+      user:
+        name: "{{ item }}"
+        state: present
+        groups: "docker"
+        append: yes
+      with_items:
+        - pi
+        - "{{ NMEUSR }}"
+      when: DOCKER == True
+
+
+    - name: Reboot the machine
+      reboot:
+        reboot_timeout: 3600
+      when: REBOOT == True
+

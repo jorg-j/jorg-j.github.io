@@ -7,7 +7,11 @@ This is just a place for me to test and store odds and ends.
 
 [Docker](pages/docker.md)
 
+[Ansible Docker RPI](pages/docker-rpi-ansible.md)
+
 ## Docker Resources
+
+
 
 ### NextCloud
 
