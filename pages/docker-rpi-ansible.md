@@ -17,7 +17,7 @@ ansible_become=yes
 ansible_python_interpreter='/usr/bin/env python3'
 ```
 
-Once this is done you can pull the 4b_setup.yaml playbook rom the resources section below.
+Once this is done you can pull the 4b_setup.yaml playbook from the resources section below.
 
 In the playbook set the `NMEUSR` variable to the username you want to be added to the docker group. By default the user `pi` and the `NMEUSR` will be added to this group. 
 
