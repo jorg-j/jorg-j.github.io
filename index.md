@@ -53,6 +53,3 @@ No code in here should be considered best practice or even at an "ok" standard. 
 
 [Webhook Light Control](pages/hue.md)
 
-## Property Hunter Tool
-
-[Property Hunter](pages/propertyhunter.md)
