@@ -1,5 +1,6 @@
 ---
 nav_exclude: true
+search_exclude: true
 ---
 # Deploying Docker to an RPI with Ansible
 
