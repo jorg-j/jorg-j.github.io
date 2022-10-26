@@ -1,3 +1,6 @@
+---
+nav_exclude: true
+---
 # Deploying Docker to an RPI with Ansible
 
 Why use Ansible to provision Docker to an RPi? - I was needing to reflash my RPi frequently and this got the environment exactly how I needed it to be.

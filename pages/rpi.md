@@ -1,3 +1,7 @@
+---
+nav_exclude: true
+---
+
 ## RPi
 
 ### Remove Unnessesary Programs

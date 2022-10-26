@@ -1,3 +1,7 @@
+---
+nav_exclude: true
+---
+
 ## Bash
 
 [Get Options](bash_resources/opts.md)

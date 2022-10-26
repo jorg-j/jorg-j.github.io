@@ -1,3 +1,7 @@
+---
+nav_exclude: true
+---
+
 # moonlander-mk1
 Mapping for Ergodox Moonlander
 
