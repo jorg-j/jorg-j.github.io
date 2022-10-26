@@ -1,3 +1,6 @@
+---
+nav_exclude: true
+---
 ## Case and IF statements
 
 ### Case

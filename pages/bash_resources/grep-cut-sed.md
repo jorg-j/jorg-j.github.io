@@ -1,3 +1,6 @@
+---
+nav_exclude: true
+---
 ## GREP
 
 Used to find regex patterns in files
