@@ -27,11 +27,6 @@ No code in here should be considered best practice or even at an "ok" standard. 
 
 [Download](resources/docker/minidlnabuild.sh)
 
-### Transmission
-
-[Raw]({{ site.raw }}resources/docker/transmission.sh)
-
-[Download](resources/docker/transmission.sh)
 
 ### Webhook Resources
 
