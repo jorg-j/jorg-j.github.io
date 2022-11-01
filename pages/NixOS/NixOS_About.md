@@ -1,4 +1,3 @@
-
 ---
 title: NixOS - About
 layout: default
@@ -56,7 +55,9 @@ You will need the wpa_supplicant.conf data later.
 
 Post boot copy the configuration file to `/etc/nixos/configuration.nix`
 
-You can download the configuration here [Download](resources/nix3b.nix){: .btn .btn-purple }
+You can download the configuration here
+
+[Download](resources/nix3b.nix){: .btn .btn-purple }
 
 Or directly onto the Pi with `curl -L https://jorg-j.github.io/resources/nix3b.nix | sudo tee /etc/nixos/configuration.nix`
 
