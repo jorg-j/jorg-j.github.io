@@ -23,7 +23,7 @@ This is mostly due to 2 bugs in the base firmware.
 
 This can be resolved by performing the following.
 
-####\ Getting the Right Image
+#### Getting the Right Image
 
 This build of Nix is a 19.x version with a working kernel. "Working" being compatible with the RPi3b SOC.
 https://hydra.nixos.org/build/127900853
