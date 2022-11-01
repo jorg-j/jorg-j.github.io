@@ -2,7 +2,7 @@
 title: NixOS - RPi 3b Configuration 
 layout: default
 parent: NixOS
-nav_order: 3
+nav_order: 4
 ---
 
 ```
@@ -41,9 +41,6 @@ nav_order: 3
       fsType = "ext4";
     };
   };
-
-
-}
 
 
 

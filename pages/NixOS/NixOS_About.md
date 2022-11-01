@@ -62,11 +62,11 @@ Or directly onto the Pi with `curl -L https://jorg-j.github.io/resources/nix3b.n
 
 Using your text editor of choice open `/etc/nixos/configuration.nix` with sudo.
 
-At line 74 set your password. You can use plaintext here. OR if you want to be secure.
+At line 71 set your password. You can use plaintext here. OR if you want to be secure.
 
 `mkpasswd -m sha-512` to generate a hash of your password. Comment out the password value in the configuration.nix file and under it place
 `hashedPassword = "$HASH"` with your hashed password replacing`$HASH`
 
-Go to line 90 and replace `MySSID` with the SSID of the Wifi access point you wish to connect to, and `PASSHASH` will be replaced with the psk found in the `wpa_supplicant.conf` file created above.
+Go to line 87 and replace `MySSID` with the SSID of the Wifi access point you wish to connect to, and `PASSHASH` will be replaced with the psk found in the `wpa_supplicant.conf` file created above.
 
 Save the file and run `sudo nix-os rebuild switch` and ☕

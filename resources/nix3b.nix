@@ -34,9 +34,6 @@
   };
 
 
-}
-
-
 
   # === Package Management ===
   # Allow unfree packages
