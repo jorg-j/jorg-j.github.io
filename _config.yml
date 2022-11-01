@@ -19,6 +19,12 @@ markdown: kramdown
 plugins:
   - jekyll-feed
 
+callouts:
+  warning:
+    title: Warning
+    color: red
+
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
