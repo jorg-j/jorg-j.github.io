@@ -23,7 +23,7 @@ This is mostly due to 2 bugs in the base firmware.
 
 This can be resolved by performing the following.
 
-#### Getting the Right Image
+####\ Getting the Right Image
 
 This build of Nix is a 19.x version with a working kernel. "Working" being compatible with the RPi3b SOC.
 https://hydra.nixos.org/build/127900853
@@ -43,7 +43,7 @@ Once complete remove the SD card from the host machine and put it in the RPi and
 
 
 
-#### Setup Wifi
+### Setup Wifi
 
 Run `wpa_passphrase $SSID $PASS | tee wpa_supplicant.conf` supplimenting your SSID and Password
 
@@ -51,7 +51,7 @@ Then run `sudo wpa_supplicant -B -i wlan0 wpa_supplicant.conf &`
 
 You will need the wpa_supplicant.conf data later.
 
-#### Nix Configuration
+### Nix Configuration
 
 Post boot copy the configuration file to `/etc/nixos/configuration.nix`
 
@@ -71,3 +71,14 @@ At line 71 set your password. You can use plaintext here. OR if you want to be s
 Go to line 87 and replace `MySSID` with the SSID of the Wifi access point you wish to connect to, and `PASSHASH` will be replaced with the psk found in the `wpa_supplicant.conf` file created above.
 
 Save the file and run `sudo nix-os rebuild switch`
+
+Once this is complete you will want to enable the Pi to boot without a HDMI connected.
+
+Mount the SD card on a host machine or mount the FIRMWARE volume on the pi.
+
+In the config.txt file add the below
+
+```
+hdmi_force_hotplug=1
+hdmi_drive=2
+```
