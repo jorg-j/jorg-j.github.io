@@ -69,4 +69,4 @@ At line 71 set your password. You can use plaintext here. OR if you want to be s
 
 Go to line 87 and replace `MySSID` with the SSID of the Wifi access point you wish to connect to, and `PASSHASH` will be replaced with the psk found in the `wpa_supplicant.conf` file created above.
 
-Save the file and run `sudo nix-os rebuild switch` and ☕
+Save the file and run `sudo nix-os rebuild switch`
