@@ -24,11 +24,11 @@ sudo usermod -a -G dialout $USER
 
 ## Download the Project
 
-[Download](https://jorg-j.github.io/resources/Coral_Sorter.zip){: .btn .btn-purple }
+[Download]({{ '/resources/Coral_Sorter.zip' | relative_url }}){: .btn .btn-purple }
 
 OR
 
-`wget https://jorg-j.github.io/resources/Coral_Sorter.zip`
+`wget {{ site.url }}/resources/Coral_Sorter.zip`
 
 Extract the zip into a directory.
 
