@@ -1,8 +1,8 @@
 ---
 title: Ansible
 layout: default
-parent: Ansible
 nav_order: 6
+has_children: false
 ---
 
 # Ansible for Provisioning Servers
