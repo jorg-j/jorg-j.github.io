@@ -1,7 +1,7 @@
 ---
 title: Ansible
 layout: default
-parent: ESP32 - ESP8266 Sensors
+parent: Ansible
 nav_order: 6
 ---
 
@@ -34,4 +34,7 @@ By using `ansible-pull` the machine running the command is responsbile for itsel
 
 This means the machine will effectively reprovision itself daily without the need for an external host. This setup works well in my current situation however it may not work well in others. 
 
+Here is the script which kicks off the ansible setup. Note: if you are not on my network this will not work.
+
 [Download Ansible Pull Setup](resources/ansible.sh){: .btn .btn-purple }
+
