@@ -5,6 +5,8 @@ parent: ESP32 - ESP8266 Sensors
 nav_order: 5
 ---
 
+# ESP32 Flashing
+
 Note: you can use an ESP8266 or an ESP32 for this, there are some slight changes but nothing major
 
 This part assumes you are running Linux (Debian/Ubuntu). If you have a Windows OS then you will need to locate the information yourself.
@@ -30,14 +32,18 @@ On some linux distro's the braile hardware library interupts our ability to flas
 ## Unpack the binaries
 
 
-Binaries can be sourced directly from https://micropython.org/download/esp8266/ and https://micropython.org/download/esp32/
+Binaries can be sourced directly from the links below
+
+[ESP8266 - Micropython.org](https://micropython.org/download/esp8266/)
+[ESP32 - Micropython.org](https://micropython.org/download/esp32/)
+
 If they are not available the binaries can be downloaded here
 
 [Download]({{ '/resources/ESP_binaries.zip' | relative_url }}){: .btn .btn-purple }
 
 ## Flashing Micropython
 
-With the binaries now available run the following. Noting depending on the device you may need to hold the boot button / bridge the boot pin to ensure downloade mode is on
+With the binaries now available run the following. Note: depending on the device you may need to hold the boot button or bridge the boot pin to ensure downloade mode is on
 
 ### ESP32
 ```
@@ -57,7 +63,7 @@ esptool.py --port /dev/ttyUSB0 --baud 460800 write_flash --flash_size=detect 0 e
 For this example I have connected a DS18B20 temperature sensor to GPIO 2, VIN and Ground.
 Note lookup the pinout for your specific board.
 
-![](resources/ESP32-36-Pin-Pinout.jpg)
+![ESP32](/resources/ESP32-36-Pin-Pinout.jpg)
 
 
 
