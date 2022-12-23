@@ -1,35 +1,54 @@
 #!/bin/bash
-#
-# Install Ansible and Git then run first pull
 
-printf "%s\n" "Preparing for ansible:"
+UPDATE=0
 
-PS3="Enter a number: "
+function install_base() {
+   if [ -z "$(which $1)" ]
+    then
+        if [ $UPDATE == 0 ]; then
+            sudo apt update
+            UPDATE=1
+        fi
+        sudo apt install $1 -y
+    else
+        echo "$1 installed"
+    fi 
+}
 
-select filetype in RaspberryPi Yeti RPIScreen
-do
-    echo "Selected: $filetype"
-    break
-done
+function ansible_install() {
+    install_base "git"
+    install_base "ansible"
+    echo "Running Ansible Pull for $1"
+    sleep 1
+    ansible-pull -U http://192.168.1.122:8080/git/root/ansible_pull.git $2 --checkout master
+}
+
+install_base "whiptail"
 
 
-sudo apt update
-sudo apt install ansible git
+CHOICE=$(
+    whiptail --title "Ansible Installer" --menu "Choose System to Install" 16 100 9 \
+    "1)" "4b Capaldi"   \
+    "2)" "3b Tenant"   \
+    "3)" "MQTT Clara" \
+    3>&2 2>&1 1>&3
+)
 
-case $filetype in
-    RaspberryPi)
-        echo "Running Ansible Pull for Raspberry Pi"
-        ansible-pull -U http://192.168.1.122:8080/git/root/ansiblepull.git local-server-pi.yml
+if [ $? -gt 0 ]; then
+    exit
+fi
+
+case $CHOICE in
+    "1)")
+        ansible_install "Capaldi" "local-capaldi.yml"
     ;;
-    Yeti)
-        echo "Running Ansible Pull for Yeti"
-        ansible-pull -U http://192.168.1.122:8080/git/root/ansiblepull.git local-server-yeti.yml
+    "2)")
+        ansible_install "Tenant" "local-tenant.yml"
     ;;
-    RPIScreen)
-        echo "Running Ansible Pull for Raspberry Pi MQTT"
-        ansible-pull -U http://192.168.1.122:8080/git/root/ansiblepull.git main_7inch.yml
-    ;;
-    *)
-        printf "Invalid Selection\n"
+    "3)")
+        ansible_install "Clara" "local-pi-mqtt.yml"
     ;;
 esac
+
+
+exit
