@@ -35,6 +35,7 @@ On some linux distro's the braile hardware library interupts our ability to flas
 Binaries can be sourced directly from the links below
 
 [ESP8266 - Micropython.org](https://micropython.org/download/esp8266/)
+
 [ESP32 - Micropython.org](https://micropython.org/download/esp32/)
 
 If they are not available the binaries can be downloaded here
